@@ -1,4 +1,4 @@
-# SeaMonster Shopify Starter Theme
+# CavaQuintanilla Shopify Theme
 
 Use a modern JavaScript and Sass build system with Shopify.
 
