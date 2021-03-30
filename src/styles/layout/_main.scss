@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, .Heading {
 }
 
 main {
-  width: 100%; height: auto; position: relative; padding-top: 0!important; margin: 0; z-index: 3;
+  width: 100%; height: auto; position: relative; padding-top: 0!important; margin: 0;
 }
 article {
   width: 100%; height: auto; padding: 0; margin: 0; position: relative;
@@ -56,5 +56,13 @@ article {
     & .Icon {
       width: 23px; height: 23px;
     }
+  }
+}
+
+// Sections
+.PaddingSection {
+  padding-top: 50px;
+  @media all and (min-width: 1008px) {
+    padding-top: 80px;
   }
 }

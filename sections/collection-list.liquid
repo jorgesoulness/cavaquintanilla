@@ -9,7 +9,7 @@
 }
 {%- endcapture -%}
 
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list">
+<section id="section-{{ section.id }}" class="PaddingSection" data-section-id="{{ section.id }}" data-section-type="collection-list">
   {%- capture collection_items -%}
     {%- for block in section.blocks -%}
       {%- assign collection = collections[block.settings.collection] -%}

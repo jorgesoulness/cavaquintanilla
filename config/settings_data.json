@@ -86,29 +86,29 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "e0ee307e-35e2-46d7-92b4-85bc1d5316af": {
-            "type": "links",
-            "settings": {
-              "menu": "menu-inferior-principal"
-            }
-          },
           "footer-1": {
             "type": "links",
             "settings": {
               "menu": "footer"
             }
           },
+          "e0ee307e-35e2-46d7-92b4-85bc1d5316af": {
+            "type": "links",
+            "settings": {
+              "menu": "menu-inferior-principal"
+            }
+          },
           "footer-2": {
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              "content": "<p>Suscríbete y recibe actualizaciones, acceso a ofertas exclusivas y más.<\/p>"
             }
           }
         },
         "block_order": [
-          "e0ee307e-35e2-46d7-92b4-85bc1d5316af",
           "footer-1",
+          "e0ee307e-35e2-46d7-92b4-85bc1d5316af",
           "footer-2"
         ],
         "settings": {
@@ -120,32 +120,36 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-0": {
+          "slide-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/slide-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide-1-mobile.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
+              "subheading": "Cavaquintanilla",
+              "title": "Nombre Slide",
               "button_1_text": "",
               "button_2_text": ""
             }
           },
-          "slide-1": {
+          "slide-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_6129.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide-2-mobile.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
+              "subheading": "Cavaquintanilla",
+              "title": "Nombre de Slide",
               "button_1_text": "",
               "button_2_text": ""
             }
           }
         },
         "block_order": [
-          "slide-0",
-          "slide-1"
+          "slide-1",
+          "slide-0"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -163,10 +167,11 @@
           "featured-collection-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
-              "title": "",
+              "collection": "vinos-de-temporada",
+              "title": "Vinos de Temporada",
               "grid_items_count": 8,
-              "button_text": "View all products"
+              "button_text": "Ver Productos",
+              "button_link": "shopify:\/\/collections\/vinos"
             }
           }
         },
@@ -190,11 +195,12 @@
             "type": "collection",
             "settings": {
               "collection": "",
+              "image": "shopify:\/\/shop_images\/enoturismo-3.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
+              "subheading": "Enoturismo",
+              "title": "Título caja",
+              "button_text": "Ver viaje",
               "apply_overlay": true
             }
           },
@@ -202,11 +208,12 @@
             "type": "collection",
             "settings": {
               "collection": "",
+              "image": "shopify:\/\/shop_images\/enoturismo-2.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
+              "subheading": "Enoturismo",
+              "title": "Título Viaje",
+              "button_text": "Ver viaje",
               "apply_overlay": true
             }
           },
@@ -214,11 +221,12 @@
             "type": "collection",
             "settings": {
               "collection": "",
+              "image": "shopify:\/\/shop_images\/enoturismo-1.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
+              "subheading": "Enoturismo",
+              "title": "Título viaje",
+              "button_text": "Ver Viaje",
               "apply_overlay": true
             }
           }
@@ -376,12 +384,17 @@
         "settings": {
           "show_collection_info": true,
           "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
           "show_sort_by": true,
           "show_layout_switch": false,
-          "toolbar_position": "bottom",
-          "filter_position": "sidebar",
+          "toolbar_position": "top",
+          "filter_position": "drawer",
           "filter_mode": "tag",
           "show_filter_color_swatch": true,
+          "filter_menu": "",
           "grid_items_per_page": 16,
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
@@ -391,8 +404,10 @@
         "type": "recently-viewed-products",
         "settings": {
           "show_section": true,
-          "title": "Recently viewed",
-          "show_product_info": true
+          "title": "Visto Recientemente",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
         }
       },
       "collection-footer": {
@@ -441,11 +456,26 @@
           "show_newsletter": true,
           "apparition_delay": 5
         }
+      },
+      "16170848104a88ffd3": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/nuestra-historia.jpg",
+          "background": "#85754e",
+          "text_color": "#ffffff",
+          "block_size": "large",
+          "title": "Nuestra Historia",
+          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar dapibus sem, malesuada mattis dui sollicitudin id. Morbi eget leo in nunc ultrices posuere eu at arcu. Ut dignissim tellus vel enim faucibus, id pretium nulla cursus. Integer nec maximus orci, nec rutrum quam. Duis aliquet est nec augue posuere, eget pulvinar nibh egestas. Phasellus id auctor massa.<\/p>",
+          "button_label": "Ver más",
+          "button_link": "#",
+          "show_parallax": true
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "featured-collections",
+      "16170848104a88ffd3",
       "collection-list",
       "featured-product",
       "timeline",
