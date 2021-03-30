@@ -17,6 +17,14 @@
     {%- endfor -%}
   {%- endcapture -%}
 
+  <header class="SectionHeader SectionHeader--center">
+    <div class="Container">
+    {%- if section.settings.title != blank -%}
+      <h3 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h3>
+    {%- endif -%}
+    </div>
+  </header><!-- end.Titulo -->
+
   {%- if section.settings.stack_on_mobile -%}
     <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
       {{ collection_items }}
@@ -55,6 +63,12 @@
   "name": "Collection list",
   "max_blocks": 18,
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "Featured collection"
+    },
     {
       "type": "select",
       "id": "image_size",

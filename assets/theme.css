@@ -1076,7 +1076,7 @@ body {
   font-family: var(--text-font-family);
   font-weight: var(--text-font-weight);
   font-style: var(--text-font-style);
-  color: var(--text-color);
+  color: #1d1d1b;
   background: var(--background);
   line-height: 1.65;
 }
