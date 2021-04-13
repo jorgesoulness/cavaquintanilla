@@ -96,7 +96,20 @@
 {% schema %}
 {
   "name": "Contact page",
-  "settings": [],
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "addresss",
+      "label": {
+        "en": "Location",
+        "es": "Ubicación"
+      },
+      "default": {
+        "en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "es": "<p>Usa este texto para compartir información sobre tu marca con tus clientes. Describe un producto, comparte anuncios o recibe clientes en tu tienda.</p>"
+      }
+    }
+  ],
   "blocks": [
     {
       "type": "text",
