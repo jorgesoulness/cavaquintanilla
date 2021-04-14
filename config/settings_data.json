@@ -57,7 +57,7 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#85754e",
           "text_color": "#ffffff",
@@ -74,7 +74,7 @@
           "show_currency_selector": false,
           "show_locale_selector": false,
           "navigation_menu": "main-menu",
-          "navigation_style": "inline",
+          "navigation_style": "center",
           "show_icons": false,
           "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
@@ -403,9 +403,9 @@
       "recently-viewed-products": {
         "type": "recently-viewed-products",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "Visto Recientemente",
-          "show_product_info": true,
+          "show_product_info": false,
           "show_vendor": false,
           "show_color_swatch": false
         }
@@ -425,23 +425,37 @@
         "settings": {
           "show_share_buttons": true,
           "show_vendor": true,
+          "show_sku": false,
+          "show_taxes_included": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
           "show_color_swatch": false,
           "show_color_carousel": false,
           "show_quantity_selector": true,
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
-          "image_size": "large",
+          "show_price_in_button": false,
+          "show_payment_button": true,
+          "show_pickup_availability": false,
+          "image_size": "small",
           "stack_images": true,
           "show_thumbnails": false,
           "enable_image_zoom": true,
-          "reviews_enabled": false
+          "enable_video_looping": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "small"
         }
       },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "show_product_info": true
+          "heading": "También te puede interesar",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
         }
       },
       "popup": {
@@ -486,7 +500,9 @@
         "block_order": [
           "page-contact-template-0"
         ],
-        "settings": {}
+        "settings": {
+          "addresss": "<p>Correo Electrónico: atencionaclientes@cavaquintanilla.com<\/p>"
+        }
       }
     },
     "content_for_index": [

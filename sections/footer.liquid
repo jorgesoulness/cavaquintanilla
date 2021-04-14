@@ -15,6 +15,25 @@
         {%- for block in section.blocks -%}
           <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
             {%- case block.type -%}
+              {%- when 'image' -%}
+                  <div class="listFooter">
+                    <div class="listFooter__box">
+                      <div class="listFooter__box--brand">
+            {%- assign img_url = block.settings.logo_footer | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                        <a href="{{ routes.root_url }}" data-image-loading-animation>
+            {% capture logo_alt %}{{ block.settings.logo_footer.alt | default: shop.name }}{% endcapture %}
+                          <img class="lazyload js"
+                              src="{{ block.settings.logo_footer | img_url: '300x300' }}"
+                              data-src="{{ img_url }}"
+                              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                              data-aspectratio="{{ block.settings.logo_footer.aspect_ratio }}"
+                              data-sizes="auto"
+                              alt="{{ logo_alt | escape }}">
+                          <p class="site-title">{{ shop.name }}</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div><!-- end.listFooter -->
               {%- when 'text' -%}
                 {%- if block.settings.title != blank -%}
                   <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
@@ -215,6 +234,20 @@
   ],
   "blocks": [
     {
+      "type": "image",
+      "name": "Logo Footer",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_footer",
+          "label": {
+            "en": "Logo image",
+            "es": "Logo"
+          }
+        }
+      ]
+    },
+    {
       "type": "text",
       "name": "Text / social media",
       "settings": [
@@ -278,7 +311,7 @@
   "default": {
     "blocks": [
       {
-        "type": "text",
+        "type": "image",
         "settings": {}
       },
       {
