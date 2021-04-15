@@ -86,10 +86,10 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-1": {
-            "type": "links",
+          "906631c6-f080-4004-940a-c0f5eb3b930b": {
+            "type": "image",
             "settings": {
-              "menu": "footer"
+              "logo_footer": "shopify:\/\/shop_images\/logo_quintanilla_primary.png"
             }
           },
           "e0ee307e-35e2-46d7-92b4-85bc1d5316af": {
@@ -107,7 +107,7 @@
           }
         },
         "block_order": [
-          "footer-1",
+          "906631c6-f080-4004-940a-c0f5eb3b930b",
           "e0ee307e-35e2-46d7-92b4-85bc1d5316af",
           "footer-2"
         ],
@@ -139,7 +139,7 @@
               "image": "shopify:\/\/shop_images\/IMG_6129.jpg",
               "mobile_image": "shopify:\/\/shop_images\/slide-2-mobile.jpg",
               "apply_overlay": true,
-              "content_position": "bottomLeft",
+              "content_position": "middleCenter",
               "subheading": "Cavaquintanilla",
               "title": "Nombre de Slide",
               "button_1_text": "",
@@ -474,7 +474,7 @@
       "16170848104a88ffd3": {
         "type": "image-with-text-block",
         "settings": {
-          "image": "shopify:\/\/shop_images\/nuestra-historia.jpg",
+          "image": "shopify:\/\/shop_images\/image_quienes.jpg",
           "background": "#85754e",
           "text_color": "#ffffff",
           "block_size": "large",
