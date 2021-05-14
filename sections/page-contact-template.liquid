@@ -30,14 +30,20 @@
 
         <div class="Form__Group">
           <div class="Form__Item">
-            <input type="text" class="Form__Input" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
-            <label class="Form__FloatingLabel">{{ 'contact.form.name' | t }}</label>
+            <input type="text" class="Form__Input" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}*" required {% if customer %}value="{{ customer.name }}"{% endif %}>
+            <label class="Form__FloatingLabel">{{ 'contact.form.name' | t }}*</label>
           </div>
 
           <div class="Form__Item">
-            <input type="email" class="Form__Input" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" placeholder="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
-            <label class="Form__FloatingLabel">{{ 'contact.form.email' | t }}</label>
+            <input type="email" class="Form__Input" name="contact[Apellido]" aria-label="Apellido" placeholder="Su Apellido*" required>
+            <label class="Form__FloatingLabel">Su Apellido*</label>
           </div>
+        </div>
+
+        <div class="Form__Item">
+          <input type="email" class="Form__Input" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}"
+            placeholder="{{ 'contact.form.email' | t }}*" required {% if customer %}value="{{ customer.email }}" {% endif %}>
+          <label class="Form__FloatingLabel">{{ 'contact.form.email' | t }}</label>
         </div>
 
         {%- for block in section.blocks -%}
@@ -83,13 +89,34 @@
         {%- endfor -%}
 
         <div class="Form__Item">
-          <textarea name="contact[body]" cols="30" rows="10" class="Form__Textarea" aria-label="{{ 'contact.form.message' | t }}" placeholder="{{ 'contact.form.message' | t }}" required></textarea>
-          <label class="Form__FloatingLabel">{{ 'contact.form.message' | t }}</label>
+          <textarea name="contact[body]" cols="30" rows="10" class="Form__Textarea" aria-label="{{ 'contact.form.message' | t }}" placeholder="{{ 'contact.form.message' | t }}*" required></textarea>
+          <label class="Form__FloatingLabel">{{ 'contact.form.message' | t }}*</label>
+        </div>
+        <div class="Form__Item">
+          <div class="descForm">
+            <p><small><b>(*)</b> Campos obligatorios</small></p>
+          </div>
         </div>
 
         <button type="submit" class="Form__Submit Button Button--primary Button--full">{{ 'contact.form.submit' | t }}</button>
       {%- endform -%}
     </div>
+
+    <hr>
+
+{%- if section.settings.addresss -%}
+    <div class="descUbi Rte">
+      {{- section.settings.addresss -}}
+    </div>
+{%- endif -%}
+
+{%- if section.settings.show_mapa -%}
+    <div class="mapaCont">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14721.573479834464!2d-100.9638558!3d22.7136159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86806a21779e100f%3A0xa9f338846557552d!2sCava%20Quintanilla!5e0!3m2!1ses!2smx!4v1621006812101!5m2!1ses!2smx"
+        style="border:0;display:block;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+{%- endif -%}
   </div>
 </div>
 
@@ -108,6 +135,12 @@
         "en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
         "es": "<p>Usa este texto para compartir información sobre tu marca con tus clientes. Describe un producto, comparte anuncios o recibe clientes en tu tienda.</p>"
       }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mapa",
+      "label": "Mostrar Papa",
+      "default": true
     }
   ],
   "blocks": [

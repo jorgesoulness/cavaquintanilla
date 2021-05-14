@@ -123,3 +123,71 @@ article {
     text-align: justify;
   }
 }
+.downPdf {
+  width: 100%; height: auto; padding: 0; margin: 15px 0 15px; position: relative;
+  & .text-pdf {
+    & a {
+      display: inline-block; padding: .35em .65em; font-size: .75em; font-weight: 600; line-height: 1; color: #fff!important; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0; background-color: $col1!important; text-decoration: none!important; text-transform: uppercase;
+      &:hover {
+        background-color: $col2!important;
+      }
+    }
+  }
+}
+.listSpecs {
+  @include display(flex); @include flex-direction(column); @include flex-wrap(wrap); padding: 0!important; position: relative; margin: 10px 0 10px!important; list-style-type: none;
+  & li {
+    position: relative; list-style-type: none; padding: 5px 0 5px 40px!important; width: 100%; margin: 0; letter-spacing: 0!important;
+    &:before {
+      content: ''; width: 32px; height: 32px; margin: 0; margin: 0; @include position(absolute, 6px null null 0); opacity: 0.70;
+    }
+    & h4 {
+      color: $col1!important; margin: 0; padding: 0;
+    }
+    & p {
+      margin: 0; padding: 0;
+    }
+    &.temperatura {
+      &:before {
+        content: url('temperatura.png');
+      }
+    }
+    &.variedad {
+      &:before {
+        content: url('variedad.png');
+      }
+    }
+    &.crianza {
+      &:before {
+        content: url('crianza.png');
+      }
+    }
+    &.cata {
+      &:before {
+        content: url('cata.png');
+      }
+    }
+    &.meridaje {
+      &:before {
+        content: url('meridaje.png');
+      }
+    }
+    &.premios {
+      &:before {
+        content: url('premios.png');
+      }
+    }
+  }
+}
+hr {
+  padding: 0; width: 100%; border-top: 0.6px solid $c8; margin: 20px 0;
+}
+.descUbi {
+  width: 100%; height: auto; padding: 0; margin: 0 0 20px; position: relative;
+}
+.mapaCont {
+  width: 100%; height: auto; padding: 0; margin: 0; position: relative;
+  & iframe {
+    width: 100%; height: 350px; margin: 0; padding: 0;
+  }
+}

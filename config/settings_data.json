@@ -38,6 +38,10 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/Cavaquintanillaslp\/",
+    "social_instagram": "https:\/\/www.instagram.com\/cavaquintanilla\/",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logotipo_quintanilla_primary.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#ffffff",
@@ -98,18 +102,19 @@
               "menu": "menu-inferior-principal"
             }
           },
-          "footer-2": {
-            "type": "newsletter",
+          "ec91a0a6-ffc5-4210-846c-df4e07cf75b6": {
+            "type": "text",
             "settings": {
-              "title": "Newsletter",
-              "content": "<p>Suscríbete y recibe actualizaciones, acceso a ofertas exclusivas y más.<\/p>"
+              "title": "Síguenos en",
+              "content": "",
+              "show_social_media": true
             }
           }
         },
         "block_order": [
           "906631c6-f080-4004-940a-c0f5eb3b930b",
           "e0ee307e-35e2-46d7-92b4-85bc1d5316af",
-          "footer-2"
+          "ec91a0a6-ffc5-4210-846c-df4e07cf75b6"
         ],
         "settings": {
           "show_payment_methods": true,
@@ -190,6 +195,7 @@
       },
       "collection-list": {
         "type": "collection-list",
+        "disabled": true,
         "blocks": {
           "collection-0": {
             "type": "collection",
@@ -199,8 +205,9 @@
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Enoturismo",
-              "title": "Título caja",
+              "title": "Test nota",
               "button_text": "Ver viaje",
+              "button_link": "shopify:\/\/products\/ejemplo-enoturismo",
               "apply_overlay": true
             }
           },
@@ -479,7 +486,7 @@
           "text_color": "#ffffff",
           "block_size": "large",
           "title": "Nuestra Historia",
-          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar dapibus sem, malesuada mattis dui sollicitudin id. Morbi eget leo in nunc ultrices posuere eu at arcu. Ut dignissim tellus vel enim faucibus, id pretium nulla cursus. Integer nec maximus orci, nec rutrum quam. Duis aliquet est nec augue posuere, eget pulvinar nibh egestas. Phasellus id auctor massa.<\/p>",
+          "content": "<p>Cava Quintanilla se encuentra situada en el municipio de Moctezuma, San Luis Potosí, México, a una altitud de 1,630 metros sobre el nivel del mar en la regíón del Altiplano Potosino. La idea de este gran proyecto surge hace 10 años tras una visita de su propietario Carlos Quintanilla, a la campiña francesa, consolidándose en el año 2011 con el arranque de la plantación de las primeras cepas en una superficie de 20 hectáreas. Actualmente contamos con 11 variedades de uva tinta y 3 de uva blanca en una superficie de 120 hectáreas, todas son manejadas bajo el método de conducción en cordón y poda en pulgar. Cava Quintanilla es producto de nuestro profundo conocimiento del cultivo de la tierra y el amor por la agricultura responsable. Somos pioneros en el cultivo de la vid en el Altiplano Potosino, nuestro proyecto representa el descubrimiento y colonización de un nuevo y fascinante terruño mexicano.<\/p>",
           "button_label": "Ver más",
           "button_link": "#",
           "show_parallax": true
@@ -487,21 +494,8 @@
       },
       "page-contact-template": {
         "type": "page-contact-template",
-        "blocks": {
-          "page-contact-template-0": {
-            "type": "text",
-            "settings": {
-              "title": "Teléfono",
-              "use_long_text": false,
-              "is_required": false
-            }
-          }
-        },
-        "block_order": [
-          "page-contact-template-0"
-        ],
         "settings": {
-          "addresss": "<p>Correo Electrónico: atencionaclientes@cavaquintanilla.com<\/p>"
+          "addresss": "<p><strong>Dirección Vinícola:<\/strong> Carr. Moctezuma a Villa de Arista Km 13.5 El Carpintero, Moctezuma, SLP. CP 78900<br\/><strong>Dirección Oficina: <\/strong>Av. Carranza 2230 Local A, Col. Polanco. San Luis Potosí, México CP 78220<br\/><strong>Correo de contacto: <\/strong><a href=\"mailto:ecommerce@cavaquintanilla.com\" target=\"_blank\" title=\"ecommerce@cavaquintanilla.com\">ecommerce@cavaquintanilla.com<\/a><br\/><strong>Teléfono: <\/strong>444 191 7473 \/ 444 126 0572<\/p>"
         }
       }
     },
