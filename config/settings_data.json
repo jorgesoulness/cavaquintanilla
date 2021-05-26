@@ -38,7 +38,7 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
-    "social_facebook": "https:\/\/www.facebook.com\/Cavaquintanillaslp\/",
+    "social_facebook": "https:\/\/www.facebook.com\/cavaquintanilla",
     "social_instagram": "https:\/\/www.instagram.com\/cavaquintanilla\/",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/logotipo_quintanilla_primary.png",
@@ -125,19 +125,6 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slide-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/slide-2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/slide-1-mobile.jpg",
-              "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Cavaquintanilla",
-              "title": "Nombre Slide",
-              "button_1_text": "",
-              "button_2_text": ""
-            }
-          },
           "slide-0": {
             "type": "image",
             "settings": {
@@ -150,11 +137,24 @@
               "button_1_text": "",
               "button_2_text": ""
             }
+          },
+          "slide-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide-1-mobile.jpg",
+              "apply_overlay": true,
+              "content_position": "middleCenter",
+              "subheading": "Cavaquintanilla",
+              "title": "Nombre Slide",
+              "button_1_text": "",
+              "button_2_text": ""
+            }
           }
         },
         "block_order": [
-          "slide-1",
-          "slide-0"
+          "slide-0",
+          "slide-1"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -485,10 +485,10 @@
           "background": "#85754e",
           "text_color": "#ffffff",
           "block_size": "large",
-          "title": "Nuestra Historia",
+          "title": "Quiénes somos",
           "content": "<p>Cava Quintanilla se encuentra situada en el municipio de Moctezuma, San Luis Potosí, México, a una altitud de 1,630 metros sobre el nivel del mar en la regíón del Altiplano Potosino. La idea de este gran proyecto surge hace 10 años tras una visita de su propietario Carlos Quintanilla, a la campiña francesa, consolidándose en el año 2011 con el arranque de la plantación de las primeras cepas en una superficie de 20 hectáreas. Actualmente contamos con 11 variedades de uva tinta y 3 de uva blanca en una superficie de 120 hectáreas, todas son manejadas bajo el método de conducción en cordón y poda en pulgar. Cava Quintanilla es producto de nuestro profundo conocimiento del cultivo de la tierra y el amor por la agricultura responsable. Somos pioneros en el cultivo de la vid en el Altiplano Potosino, nuestro proyecto representa el descubrimiento y colonización de un nuevo y fascinante terruño mexicano.<\/p>",
           "button_label": "Ver más",
-          "button_link": "#",
+          "button_link": "shopify:\/\/pages\/nuestra-historia",
           "show_parallax": true
         }
       },

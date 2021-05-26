@@ -101,10 +101,10 @@ article {
   }
 }
 .Footer {
-  &__Block {
-    &--image {
-    }
-  }
+  // &__Block {
+  //   &--image {
+  //   }
+  // }
   @media all and (min-width: 1140px) {
     &__Block {
       &--image {
@@ -127,9 +127,12 @@ article {
   width: 100%; height: auto; padding: 0; margin: 15px 0 15px; position: relative;
   & .text-pdf {
     & a {
-      display: inline-block; padding: .35em .65em; font-size: .75em; font-weight: 600; line-height: 1; color: #fff!important; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0; background-color: $col1!important; text-decoration: none!important; text-transform: uppercase;
+      display: inline-block; padding: 8px 15px 6px; font-size: rem(11px); font-weight: 400; line-height: 1.3; color: #fff!important; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0; background-color: $col2!important; text-decoration: none!important; text-transform: uppercase; position: relative; letter-spacing: 2px;
+      &:before {
+        content: url('download-01.svg'); position: relative; width: 16px; height: auto; padding: 0; margin: 0 10px 0 0; display: inline-block; vertical-align: middle;
+      }
       &:hover {
-        background-color: $col2!important;
+        background-color: $col1!important;
       }
     }
   }
