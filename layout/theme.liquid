@@ -102,6 +102,11 @@
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     <!-- <script src="{{ 'scriptShop.js' | asset_url }}" defer></script> -->
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
+    <script src="{{ 'scriptMap.js' | asset_url }}" defer></script>
+
+    <script>
+      const pinUrl = "{{ 'pin-cava.png' | asset_url }}";
+    </script>
 
     <script>
       (function () {
@@ -178,5 +183,6 @@
 
       {% section 'footer' %}
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc2JzjOzLa-FJY2sOzcvuxyDJsTtaKWdI&callback=initMap" async></script>
   </body>
 </html>
